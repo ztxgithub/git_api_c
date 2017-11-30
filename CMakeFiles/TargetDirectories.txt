@@ -1,0 +1,3 @@
+/home/jame/share_user/git_api_c/CMakeFiles/edit_cache.dir
+/home/jame/share_user/git_api_c/CMakeFiles/rebuild_cache.dir
+/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir
