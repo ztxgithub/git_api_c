@@ -123,114 +123,6 @@ mongoose_example/fast:
 	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/build
 .PHONY : mongoose_example/fast
 
-easylogger/elog.o: easylogger/elog.c.o
-
-.PHONY : easylogger/elog.o
-
-# target to build an object file
-easylogger/elog.c.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog.c.o
-.PHONY : easylogger/elog.c.o
-
-easylogger/elog.i: easylogger/elog.c.i
-
-.PHONY : easylogger/elog.i
-
-# target to preprocess a source file
-easylogger/elog.c.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog.c.i
-.PHONY : easylogger/elog.c.i
-
-easylogger/elog.s: easylogger/elog.c.s
-
-.PHONY : easylogger/elog.s
-
-# target to generate assembly for a file
-easylogger/elog.c.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog.c.s
-.PHONY : easylogger/elog.c.s
-
-easylogger/elog_port.o: easylogger/elog_port.c.o
-
-.PHONY : easylogger/elog_port.o
-
-# target to build an object file
-easylogger/elog_port.c.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o
-.PHONY : easylogger/elog_port.c.o
-
-easylogger/elog_port.i: easylogger/elog_port.c.i
-
-.PHONY : easylogger/elog_port.i
-
-# target to preprocess a source file
-easylogger/elog_port.c.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.i
-.PHONY : easylogger/elog_port.c.i
-
-easylogger/elog_port.s: easylogger/elog_port.c.s
-
-.PHONY : easylogger/elog_port.s
-
-# target to generate assembly for a file
-easylogger/elog_port.c.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.s
-.PHONY : easylogger/elog_port.c.s
-
-easylogger/elog_utils.o: easylogger/elog_utils.c.o
-
-.PHONY : easylogger/elog_utils.o
-
-# target to build an object file
-easylogger/elog_utils.c.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o
-.PHONY : easylogger/elog_utils.c.o
-
-easylogger/elog_utils.i: easylogger/elog_utils.c.i
-
-.PHONY : easylogger/elog_utils.i
-
-# target to preprocess a source file
-easylogger/elog_utils.c.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.i
-.PHONY : easylogger/elog_utils.c.i
-
-easylogger/elog_utils.s: easylogger/elog_utils.c.s
-
-.PHONY : easylogger/elog_utils.s
-
-# target to generate assembly for a file
-easylogger/elog_utils.c.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.s
-.PHONY : easylogger/elog_utils.c.s
-
-easylogger/log.o: easylogger/log.cpp.o
-
-.PHONY : easylogger/log.o
-
-# target to build an object file
-easylogger/log.cpp.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o
-.PHONY : easylogger/log.cpp.o
-
-easylogger/log.i: easylogger/log.cpp.i
-
-.PHONY : easylogger/log.i
-
-# target to preprocess a source file
-easylogger/log.cpp.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/log.cpp.i
-.PHONY : easylogger/log.cpp.i
-
-easylogger/log.s: easylogger/log.cpp.s
-
-.PHONY : easylogger/log.s
-
-# target to generate assembly for a file
-easylogger/log.cpp.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/log.cpp.s
-.PHONY : easylogger/log.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -258,59 +150,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/mongoose.o: src/mongoose.c.o
+src/file_operation.o: src/file_operation.c.o
 
-.PHONY : src/mongoose.o
-
-# target to build an object file
-src/mongoose.c.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose.c.o
-.PHONY : src/mongoose.c.o
-
-src/mongoose.i: src/mongoose.c.i
-
-.PHONY : src/mongoose.i
-
-# target to preprocess a source file
-src/mongoose.c.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose.c.i
-.PHONY : src/mongoose.c.i
-
-src/mongoose.s: src/mongoose.c.s
-
-.PHONY : src/mongoose.s
-
-# target to generate assembly for a file
-src/mongoose.c.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose.c.s
-.PHONY : src/mongoose.c.s
-
-src/mongoose_timer.o: src/mongoose_timer.cpp.o
-
-.PHONY : src/mongoose_timer.o
+.PHONY : src/file_operation.o
 
 # target to build an object file
-src/mongoose_timer.cpp.o:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o
-.PHONY : src/mongoose_timer.cpp.o
+src/file_operation.c.o:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/file_operation.c.o
+.PHONY : src/file_operation.c.o
 
-src/mongoose_timer.i: src/mongoose_timer.cpp.i
+src/file_operation.i: src/file_operation.c.i
 
-.PHONY : src/mongoose_timer.i
+.PHONY : src/file_operation.i
 
 # target to preprocess a source file
-src/mongoose_timer.cpp.i:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.i
-.PHONY : src/mongoose_timer.cpp.i
+src/file_operation.c.i:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/file_operation.c.i
+.PHONY : src/file_operation.c.i
 
-src/mongoose_timer.s: src/mongoose_timer.cpp.s
+src/file_operation.s: src/file_operation.c.s
 
-.PHONY : src/mongoose_timer.s
+.PHONY : src/file_operation.s
 
 # target to generate assembly for a file
-src/mongoose_timer.cpp.s:
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.s
-.PHONY : src/mongoose_timer.cpp.s
+src/file_operation.c.s:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/file_operation.c.s
+.PHONY : src/file_operation.c.s
+
+src/network_op.o: src/network_op.c.o
+
+.PHONY : src/network_op.o
+
+# target to build an object file
+src/network_op.c.o:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/network_op.c.o
+.PHONY : src/network_op.c.o
+
+src/network_op.i: src/network_op.c.i
+
+.PHONY : src/network_op.i
+
+# target to preprocess a source file
+src/network_op.c.i:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/network_op.c.i
+.PHONY : src/network_op.c.i
+
+src/network_op.s: src/network_op.c.s
+
+.PHONY : src/network_op.s
+
+# target to generate assembly for a file
+src/network_op.c.s:
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/network_op.c.s
+.PHONY : src/network_op.c.s
 
 # Help Target
 help:
@@ -321,27 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mongoose_example"
-	@echo "... easylogger/elog.o"
-	@echo "... easylogger/elog.i"
-	@echo "... easylogger/elog.s"
-	@echo "... easylogger/elog_port.o"
-	@echo "... easylogger/elog_port.i"
-	@echo "... easylogger/elog_port.s"
-	@echo "... easylogger/elog_utils.o"
-	@echo "... easylogger/elog_utils.i"
-	@echo "... easylogger/elog_utils.s"
-	@echo "... easylogger/log.o"
-	@echo "... easylogger/log.i"
-	@echo "... easylogger/log.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/mongoose.o"
-	@echo "... src/mongoose.i"
-	@echo "... src/mongoose.s"
-	@echo "... src/mongoose_timer.o"
-	@echo "... src/mongoose_timer.i"
-	@echo "... src/mongoose_timer.s"
+	@echo "... src/file_operation.o"
+	@echo "... src/file_operation.i"
+	@echo "... src/file_operation.s"
+	@echo "... src/network_op.o"
+	@echo "... src/network_op.i"
+	@echo "... src/network_op.s"
 .PHONY : help
 
 

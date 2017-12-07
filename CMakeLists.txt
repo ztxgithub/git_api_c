@@ -15,12 +15,9 @@ set(SOURCE_FILES main.cpp)
 
 
 #配置头文件目录
-include_directories("./easylogger/include")
 include_directories("./include")
 
 #添加源文件目录
-
-aux_source_directory(./easylogger/ SOURCE_FILES)
 aux_source_directory(./src SOURCE_FILES)
 
 include_directories(

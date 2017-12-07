@@ -44,7 +44,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/jame/share_user/git_api_c/./easylogger/include"/>
 					<Add directory="/home/jame/share_user/git_api_c/./include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
@@ -69,7 +68,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/jame/share_user/git_api_c/./easylogger/include"/>
 					<Add directory="/home/jame/share_user/git_api_c/./include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
@@ -88,25 +86,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jame/share_user/git_api_c/easylogger/elog.c">
-			<Option target="mongoose_example"/>
-		</Unit>
-		<Unit filename="/home/jame/share_user/git_api_c/easylogger/elog_port.c">
-			<Option target="mongoose_example"/>
-		</Unit>
-		<Unit filename="/home/jame/share_user/git_api_c/easylogger/elog_utils.c">
-			<Option target="mongoose_example"/>
-		</Unit>
-		<Unit filename="/home/jame/share_user/git_api_c/easylogger/log.cpp">
-			<Option target="mongoose_example"/>
-		</Unit>
 		<Unit filename="/home/jame/share_user/git_api_c/main.cpp">
 			<Option target="mongoose_example"/>
 		</Unit>
-		<Unit filename="/home/jame/share_user/git_api_c/src/mongoose.c">
+		<Unit filename="/home/jame/share_user/git_api_c/src/file_operation.c">
 			<Option target="mongoose_example"/>
 		</Unit>
-		<Unit filename="/home/jame/share_user/git_api_c/src/mongoose_timer.cpp">
+		<Unit filename="/home/jame/share_user/git_api_c/src/network_op.c">
 			<Option target="mongoose_example"/>
 		</Unit>
 		<Unit filename="/home/jame/share_user/git_api_c/CMakeLists.txt">

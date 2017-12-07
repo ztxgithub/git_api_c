@@ -81,173 +81,69 @@ CMakeFiles/mongoose_example.dir/main.cpp.o.provides: CMakeFiles/mongoose_example
 CMakeFiles/mongoose_example.dir/main.cpp.o.provides.build: CMakeFiles/mongoose_example.dir/main.cpp.o
 
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o: easylogger/elog_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o   -c /home/jame/share_user/git_api_c/easylogger/elog_utils.c
+CMakeFiles/mongoose_example.dir/src/file_operation.c.o: CMakeFiles/mongoose_example.dir/flags.make
+CMakeFiles/mongoose_example.dir/src/file_operation.c.o: src/file_operation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mongoose_example.dir/src/file_operation.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/file_operation.c.o   -c /home/jame/share_user/git_api_c/src/file_operation.c
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/easylogger/elog_utils.c > CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.i
+CMakeFiles/mongoose_example.dir/src/file_operation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/src/file_operation.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/src/file_operation.c > CMakeFiles/mongoose_example.dir/src/file_operation.c.i
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/easylogger/elog_utils.c -o CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.s
+CMakeFiles/mongoose_example.dir/src/file_operation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/src/file_operation.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/src/file_operation.c -o CMakeFiles/mongoose_example.dir/src/file_operation.c.s
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.requires:
+CMakeFiles/mongoose_example.dir/src/file_operation.c.o.requires:
 
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.requires
+.PHONY : CMakeFiles/mongoose_example.dir/src/file_operation.c.o.requires
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.provides: CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.provides
+CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides: CMakeFiles/mongoose_example.dir/src/file_operation.c.o.requires
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides.build
+.PHONY : CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides
 
-CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.provides.build: CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o
-
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.o: easylogger/elog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mongoose_example.dir/easylogger/elog.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/easylogger/elog.c.o   -c /home/jame/share_user/git_api_c/easylogger/elog.c
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/easylogger/elog.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/easylogger/elog.c > CMakeFiles/mongoose_example.dir/easylogger/elog.c.i
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/easylogger/elog.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/easylogger/elog.c -o CMakeFiles/mongoose_example.dir/easylogger/elog.c.s
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.requires:
-
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.requires
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.provides: CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.provides
-
-CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.provides.build: CMakeFiles/mongoose_example.dir/easylogger/elog.c.o
+CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/file_operation.c.o
 
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o: easylogger/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o -c /home/jame/share_user/git_api_c/easylogger/log.cpp
+CMakeFiles/mongoose_example.dir/src/network_op.c.o: CMakeFiles/mongoose_example.dir/flags.make
+CMakeFiles/mongoose_example.dir/src/network_op.c.o: src/network_op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mongoose_example.dir/src/network_op.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/network_op.c.o   -c /home/jame/share_user/git_api_c/src/network_op.c
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mongoose_example.dir/easylogger/log.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jame/share_user/git_api_c/easylogger/log.cpp > CMakeFiles/mongoose_example.dir/easylogger/log.cpp.i
+CMakeFiles/mongoose_example.dir/src/network_op.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/src/network_op.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/src/network_op.c > CMakeFiles/mongoose_example.dir/src/network_op.c.i
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mongoose_example.dir/easylogger/log.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jame/share_user/git_api_c/easylogger/log.cpp -o CMakeFiles/mongoose_example.dir/easylogger/log.cpp.s
+CMakeFiles/mongoose_example.dir/src/network_op.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/src/network_op.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/src/network_op.c -o CMakeFiles/mongoose_example.dir/src/network_op.c.s
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.requires:
+CMakeFiles/mongoose_example.dir/src/network_op.c.o.requires:
 
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.requires
+.PHONY : CMakeFiles/mongoose_example.dir/src/network_op.c.o.requires
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.provides: CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.provides
+CMakeFiles/mongoose_example.dir/src/network_op.c.o.provides: CMakeFiles/mongoose_example.dir/src/network_op.c.o.requires
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/network_op.c.o.provides.build
+.PHONY : CMakeFiles/mongoose_example.dir/src/network_op.c.o.provides
 
-CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.provides.build: CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o
-
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o: easylogger/elog_port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o   -c /home/jame/share_user/git_api_c/easylogger/elog_port.c
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/easylogger/elog_port.c > CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.i
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/easylogger/elog_port.c -o CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.s
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.requires:
-
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.requires
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.provides: CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.provides
-
-CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.provides.build: CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o
-
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/src/mongoose.c.o: src/mongoose.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mongoose_example.dir/src/mongoose.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/mongoose.c.o   -c /home/jame/share_user/git_api_c/src/mongoose.c
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/src/mongoose.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/src/mongoose.c > CMakeFiles/mongoose_example.dir/src/mongoose.c.i
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/src/mongoose.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/src/mongoose.c -o CMakeFiles/mongoose_example.dir/src/mongoose.c.s
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.o.requires:
-
-.PHONY : CMakeFiles/mongoose_example.dir/src/mongoose.c.o.requires
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.o.provides: CMakeFiles/mongoose_example.dir/src/mongoose.c.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose.c.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/src/mongoose.c.o.provides
-
-CMakeFiles/mongoose_example.dir/src/mongoose.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/mongoose.c.o
-
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o: CMakeFiles/mongoose_example.dir/flags.make
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o: src/mongoose_timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o -c /home/jame/share_user/git_api_c/src/mongoose_timer.cpp
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jame/share_user/git_api_c/src/mongoose_timer.cpp > CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.i
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jame/share_user/git_api_c/src/mongoose_timer.cpp -o CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.s
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.requires:
-
-.PHONY : CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.requires
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.provides: CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.provides.build
-.PHONY : CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.provides
-
-CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.provides.build: CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o
+CMakeFiles/mongoose_example.dir/src/network_op.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/network_op.c.o
 
 
 # Object files for target mongoose_example
 mongoose_example_OBJECTS = \
 "CMakeFiles/mongoose_example.dir/main.cpp.o" \
-"CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o" \
-"CMakeFiles/mongoose_example.dir/easylogger/elog.c.o" \
-"CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o" \
-"CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o" \
-"CMakeFiles/mongoose_example.dir/src/mongoose.c.o" \
-"CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o"
+"CMakeFiles/mongoose_example.dir/src/file_operation.c.o" \
+"CMakeFiles/mongoose_example.dir/src/network_op.c.o"
 
 # External object files for target mongoose_example
 mongoose_example_EXTERNAL_OBJECTS =
 
 mongoose_example: CMakeFiles/mongoose_example.dir/main.cpp.o
-mongoose_example: CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o
-mongoose_example: CMakeFiles/mongoose_example.dir/easylogger/elog.c.o
-mongoose_example: CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o
-mongoose_example: CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o
-mongoose_example: CMakeFiles/mongoose_example.dir/src/mongoose.c.o
-mongoose_example: CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o
+mongoose_example: CMakeFiles/mongoose_example.dir/src/file_operation.c.o
+mongoose_example: CMakeFiles/mongoose_example.dir/src/network_op.c.o
 mongoose_example: CMakeFiles/mongoose_example.dir/build.make
 mongoose_example: CMakeFiles/mongoose_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable mongoose_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mongoose_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mongoose_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,12 +152,8 @@ CMakeFiles/mongoose_example.dir/build: mongoose_example
 .PHONY : CMakeFiles/mongoose_example.dir/build
 
 CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/main.cpp.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/easylogger/elog.c.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/mongoose.c.o.requires
-CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o.requires
+CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/file_operation.c.o.requires
+CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/network_op.c.o.requires
 
 .PHONY : CMakeFiles/mongoose_example.dir/requires
 

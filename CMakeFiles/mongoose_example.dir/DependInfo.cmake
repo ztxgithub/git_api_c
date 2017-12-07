@@ -5,28 +5,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/jame/share_user/git_api_c/easylogger/elog.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/easylogger/elog.c.o"
-  "/home/jame/share_user/git_api_c/easylogger/elog_port.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/easylogger/elog_port.c.o"
-  "/home/jame/share_user/git_api_c/easylogger/elog_utils.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/easylogger/elog_utils.c.o"
-  "/home/jame/share_user/git_api_c/src/mongoose.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/mongoose.c.o"
+  "/home/jame/share_user/git_api_c/src/file_operation.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/file_operation.c.o"
+  "/home/jame/share_user/git_api_c/src/network_op.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/network_op.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "./easylogger/include"
   "./include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jame/share_user/git_api_c/easylogger/log.cpp" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/easylogger/log.cpp.o"
   "/home/jame/share_user/git_api_c/main.cpp" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/main.cpp.o"
-  "/home/jame/share_user/git_api_c/src/mongoose_timer.cpp" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/mongoose_timer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "./easylogger/include"
   "./include"
   )
 
