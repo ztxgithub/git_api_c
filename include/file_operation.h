@@ -4,6 +4,15 @@
 
 #include <stdint.h>
 
+typedef int (*getnamefunc)(int socket, struct sockaddr *address, \
+		socklen_t *address_len);
+
+#define getSockIpaddr(sock, buff, bufferSize) \
+	getIpaddr(getsockname, sock, buff, bufferSize)
+
+#define getPeerIpaddr(sock, buff, bufferSize) \
+	getIpaddr(getpeername, sock, buff, bufferSize)
+
 /** write to file
  *  parameters:
  *  	filename: the filename to write
@@ -27,5 +36,18 @@ int fd_add_flags(int fd, int adding_flags);
  *  return: error no , 0 success, != 0 fail
 */
 int fd_set_cloexec(int fd);
+
+/** get ip address
+ *  parameters:
+ *          getname: the function name, should be getpeername or getsockname
+ *          sock: the socket
+ *          buff: buffer to store the ip address
+ *          bufferSize: the buffer size (max bytes)
+ *  return: in_addr_t, INADDR_NONE for fail
+*/
+in_addr_t getIpaddr(getnamefunc getname, int sock, \
+		char *buff, const int bufferSize);
+
+
 
 #endif

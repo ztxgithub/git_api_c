@@ -99,3 +99,43 @@ int fd_set_cloexec(int fd)
 {
     return fcntl_add_flags(fd, F_GETFD, F_SETFD, FD_CLOEXEC);
 }
+
+/* 通过不同的函数名取得对应getsockname功能或则getpeername功能
+ *
+ * \param getname:函数名 getsockname或则getpeername
+ * \param sock:套接字
+ * \param buff:保存ip地址的字符串的指针
+ * \param bufferSize:限定最大的字符数字
+ *
+ * \return 失败返回　INADDR_NONE
+ * 		　 成功返回 网络字节序ip
+ * */
+in_addr_t getIpaddr(getnamefunc getname, int sock, \
+		char *buff, const int bufferSize)
+{
+    struct sockaddr_in addr;
+    socklen_t addrlen;
+
+    memset(&addr, 0, sizeof(addr));
+    addrlen = sizeof(addr);
+
+    if (getname(sock, (struct sockaddr *)&addr, &addrlen) != 0)
+    {
+        *buff = '\0';
+        return INADDR_NONE;
+    }
+
+    if (addrlen > 0)
+    {
+        if (inet_ntop(AF_INET, &addr.sin_addr, buff, bufferSize) == NULL)
+        {
+            *buff = '\0';
+        }
+    }
+    else
+    {
+        *buff = '\0';
+    }
+
+    return addr.sin_addr.s_addr;
+}
