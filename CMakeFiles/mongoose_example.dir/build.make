@@ -105,9 +105,57 @@ CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides: CMakeFiles/mong
 CMakeFiles/mongoose_example.dir/src/file_operation.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/file_operation.c.o
 
 
+CMakeFiles/mongoose_example.dir/src/base64.c.o: CMakeFiles/mongoose_example.dir/flags.make
+CMakeFiles/mongoose_example.dir/src/base64.c.o: src/base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mongoose_example.dir/src/base64.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/base64.c.o   -c /home/jame/share_user/git_api_c/src/base64.c
+
+CMakeFiles/mongoose_example.dir/src/base64.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/src/base64.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/src/base64.c > CMakeFiles/mongoose_example.dir/src/base64.c.i
+
+CMakeFiles/mongoose_example.dir/src/base64.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/src/base64.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/src/base64.c -o CMakeFiles/mongoose_example.dir/src/base64.c.s
+
+CMakeFiles/mongoose_example.dir/src/base64.c.o.requires:
+
+.PHONY : CMakeFiles/mongoose_example.dir/src/base64.c.o.requires
+
+CMakeFiles/mongoose_example.dir/src/base64.c.o.provides: CMakeFiles/mongoose_example.dir/src/base64.c.o.requires
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/base64.c.o.provides.build
+.PHONY : CMakeFiles/mongoose_example.dir/src/base64.c.o.provides
+
+CMakeFiles/mongoose_example.dir/src/base64.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/base64.c.o
+
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.o: CMakeFiles/mongoose_example.dir/flags.make
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.o: src/pthread_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mongoose_example.dir/src/pthread_func.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/pthread_func.c.o   -c /home/jame/share_user/git_api_c/src/pthread_func.c
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mongoose_example.dir/src/pthread_func.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jame/share_user/git_api_c/src/pthread_func.c > CMakeFiles/mongoose_example.dir/src/pthread_func.c.i
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mongoose_example.dir/src/pthread_func.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jame/share_user/git_api_c/src/pthread_func.c -o CMakeFiles/mongoose_example.dir/src/pthread_func.c.s
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.requires:
+
+.PHONY : CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.requires
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.provides: CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.requires
+	$(MAKE) -f CMakeFiles/mongoose_example.dir/build.make CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.provides.build
+.PHONY : CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.provides
+
+CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.provides.build: CMakeFiles/mongoose_example.dir/src/pthread_func.c.o
+
+
 CMakeFiles/mongoose_example.dir/src/network_op.c.o: CMakeFiles/mongoose_example.dir/flags.make
 CMakeFiles/mongoose_example.dir/src/network_op.c.o: src/network_op.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mongoose_example.dir/src/network_op.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mongoose_example.dir/src/network_op.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mongoose_example.dir/src/network_op.c.o   -c /home/jame/share_user/git_api_c/src/network_op.c
 
 CMakeFiles/mongoose_example.dir/src/network_op.c.i: cmake_force
@@ -133,6 +181,8 @@ CMakeFiles/mongoose_example.dir/src/network_op.c.o.provides.build: CMakeFiles/mo
 mongoose_example_OBJECTS = \
 "CMakeFiles/mongoose_example.dir/main.cpp.o" \
 "CMakeFiles/mongoose_example.dir/src/file_operation.c.o" \
+"CMakeFiles/mongoose_example.dir/src/base64.c.o" \
+"CMakeFiles/mongoose_example.dir/src/pthread_func.c.o" \
 "CMakeFiles/mongoose_example.dir/src/network_op.c.o"
 
 # External object files for target mongoose_example
@@ -140,10 +190,12 @@ mongoose_example_EXTERNAL_OBJECTS =
 
 mongoose_example: CMakeFiles/mongoose_example.dir/main.cpp.o
 mongoose_example: CMakeFiles/mongoose_example.dir/src/file_operation.c.o
+mongoose_example: CMakeFiles/mongoose_example.dir/src/base64.c.o
+mongoose_example: CMakeFiles/mongoose_example.dir/src/pthread_func.c.o
 mongoose_example: CMakeFiles/mongoose_example.dir/src/network_op.c.o
 mongoose_example: CMakeFiles/mongoose_example.dir/build.make
 mongoose_example: CMakeFiles/mongoose_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mongoose_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jame/share_user/git_api_c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable mongoose_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mongoose_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +205,8 @@ CMakeFiles/mongoose_example.dir/build: mongoose_example
 
 CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/main.cpp.o.requires
 CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/file_operation.c.o.requires
+CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/base64.c.o.requires
+CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/pthread_func.c.o.requires
 CMakeFiles/mongoose_example.dir/requires: CMakeFiles/mongoose_example.dir/src/network_op.c.o.requires
 
 .PHONY : CMakeFiles/mongoose_example.dir/requires

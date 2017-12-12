@@ -58,3 +58,44 @@ int writeToFile(const char *filename, const char *buff, const int file_size)
     close(fd);
     return 0;
 }
+
+/* 设置文件的属性值,像O_NONBLOCK or FD_CLOEXEC
+ * 先获取文件的flags状态,再保持原来其他flag不变,只该某一个属性值
+ *
+ * */
+static int fcntl_add_flags(int fd, int get_cmd, int set_cmd, int adding_flags)
+{
+    int flags;
+
+    flags = fcntl(fd, get_cmd, 0);
+    if (flags < 0)
+    {
+        printf("file: "__FILE__", line: %d, " \
+			"fcntl fail, errno: %d, error info: %s.", \
+			__LINE__, errno, STRERROR(errno));
+        return errno != 0 ? errno : EACCES;
+    }
+
+    if (fcntl(fd, set_cmd, flags | adding_flags) == -1)
+    {
+        printf("file: "__FILE__", line: %d, " \
+			"fcntl fail, errno: %d, error info: %s.", \
+			__LINE__, errno, STRERROR(errno));
+        return errno != 0 ? errno : EACCES;
+    }
+
+    return 0;
+}
+
+/*　设置文件TFL类型的属性,例如　O_NONBLOCK　非阻塞
+ *
+ * */
+int fd_add_flags(int fd, int adding_flags)
+{
+    return fcntl_add_flags(fd, F_GETFL, F_SETFL, adding_flags);
+}
+
+int fd_set_cloexec(int fd)
+{
+    return fcntl_add_flags(fd, F_GETFD, F_SETFD, FD_CLOEXEC);
+}

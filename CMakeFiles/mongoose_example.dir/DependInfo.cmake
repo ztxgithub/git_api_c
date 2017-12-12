@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/jame/share_user/git_api_c/src/base64.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/base64.c.o"
   "/home/jame/share_user/git_api_c/src/file_operation.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/file_operation.c.o"
   "/home/jame/share_user/git_api_c/src/network_op.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/network_op.c.o"
+  "/home/jame/share_user/git_api_c/src/pthread_func.c" "/home/jame/share_user/git_api_c/CMakeFiles/mongoose_example.dir/src/pthread_func.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
