@@ -2,11 +2,13 @@
 #include "network_op.h"
 #include <stdio.h>
 #include <string.h>
+#include <poll.h>
+#include <fcntl.h>
 
 /* 对指定的ip:port进行socket bind绑定
  *
  * */
-int socketBind(int sock, const char *bind_ipaddr, const int port)
+static int socketBind(int sock, const char *bind_ipaddr, const int port)
 {
     struct sockaddr_in bindaddr;
 
@@ -154,4 +156,131 @@ int getlocaladdrs(char ip_addrs[][IP_ADDRESS_SIZE], \
 
 	freeifaddrs(ifc1);
 	return *count > 0 ? 0 : ENOENT;
+}
+
+/* 非阻塞超时连接到服务器(注意这个函数的sock一定要是非阻塞,如果传入的sock为阻塞,则要auto_detect为true)
+ *
+ * \param sock: socket()函数后的socket
+ * \param server_ip：服务器ip
+ * \param server_port：服务器监听的port
+ * \param timeout：连接超时时间
+ * \param auto_detect：是否自动设置sock为非阻塞,之后变回原来的特性
+ *
+ * \return 0:成功连接
+ * 		  EACCES：连接成功,但不是立马成功而是要超时建立成功
+ * */
+int connectserverbyip_nb_ex(int sock, const char *server_ip, \
+		const short server_port, const int timeout, \
+		const bool auto_detect)
+{
+    int result;
+    int flags;
+    bool needRestore;
+    socklen_t len;
+
+#ifdef USE_SELECT
+    fd_set rset;
+	fd_set wset;
+	struct timeval tval;
+#else
+    struct pollfd pollfds;
+#endif
+
+    struct sockaddr_in addr;
+
+    addr.sin_family = PF_INET;
+    addr.sin_port = htons(server_port);
+    result = inet_aton(server_ip, &addr.sin_addr);
+    if (result == 0 )
+    {
+        return EINVAL;
+    }
+
+    if (auto_detect)  //是否自动检测
+    {
+        flags = fcntl(sock, F_GETFL, 0);
+        if (flags < 0)
+        {
+            return errno != 0 ? errno : EACCES;
+        }
+
+        if ((flags & O_NONBLOCK) == 0)  //如果该sock不具备非阻塞
+        {
+            if (fcntl(sock, F_SETFL, flags | O_NONBLOCK) < 0)  //设置该sock为非阻塞
+            {
+                return errno != 0 ? errno : EACCES;
+            }
+
+            needRestore = true;
+        }
+        else  //如果该sock具备非阻塞
+        {
+            needRestore = false;
+        }
+    }
+    else  //如果不需要自动检测
+    {
+        needRestore = false;
+        flags = 0;
+    }
+
+    do
+    {
+        if (connect(sock, (const struct sockaddr*)&addr, \
+			sizeof(addr)) < 0)  //非阻塞connect不成功(EINPROGRESS（表示连接建立，建立启动但是尚未完成) 或则 connect失败)
+        {
+            result = errno != 0 ? errno : EINPROGRESS;
+            if (result != EINPROGRESS)  //connect 失败
+            {
+                break;
+            }
+        }
+        else //connect成功
+        {
+            result = 0;
+            break;
+        }
+        //到这一步说明connect==-1,表示连接建立，建立启动但是尚未完成
+
+#ifdef USE_SELECT
+        FD_ZERO(&rset);
+		FD_ZERO(&wset);
+		FD_SET(sock, &rset);
+		FD_SET(sock, &wset);
+		tval.tv_sec = timeout;
+		tval.tv_usec = 0;
+
+		result = select(sock+1, &rset, &wset, NULL, \
+				timeout > 0 ? &tval : NULL);
+#else
+        pollfds.fd = sock;
+        pollfds.events = POLLIN | POLLOUT;
+        result = poll(&pollfds, 1, 1000 * timeout);
+#endif
+
+        if (result == 0)
+        {
+            result = ETIMEDOUT;
+            break;
+        }
+        else if (result < 0)
+        {
+            result = errno != 0 ? errno : EINTR;
+            break;
+        }
+
+        len = sizeof(result);
+        if (getsockopt(sock, SOL_SOCKET, SO_ERROR, &result, &len) < 0)  //getsockopt不成功
+        {
+            result = errno != 0 ? errno : EACCES;
+            break;
+        }
+    } while (0);
+
+    if (needRestore)  //适用于auto_detect为true,且原来的sock为阻塞的,先设置为非阻塞,用完connect和poll后再设置回阻塞
+    {
+        fcntl(sock, F_SETFL, flags);
+    }
+
+    return result;
 }
