@@ -7,6 +7,10 @@
 
 #define IP_ADDRESS_SIZE (16)
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /** start a socket server (socket, bind and listen)
  *  parameters:
  *          bind_ipaddr: the ip address to bind
@@ -29,6 +33,16 @@ int connectserverbyip_nb_ex(int sock, const char *server_ip, \
 		const short server_port, const int timeout, \
 		const bool auto_detect);
 
+/** send data (non-block mode)
+ *  parameters:
+ *          sock: the socket
+ *          data: the buffer to send
+ *          size: buffer size
+ *          timeout: write timeout
+ *  return: error no, 0 success, != 0 fail
+*/
+int tcpsenddata_nb(int sock, void* data, const int size, const int timeout);
+
 /** get local host ip addresses 获取本机所有的网络接口地址保存到字符串数组中
  *  parameters:
  *          ip_addrs: store the ip addresses
@@ -39,5 +53,8 @@ int connectserverbyip_nb_ex(int sock, const char *server_ip, \
 int getlocaladdrs(char ip_addrs[][IP_ADDRESS_SIZE], \
 	const int max_count, int *count);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

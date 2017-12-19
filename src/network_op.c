@@ -284,3 +284,90 @@ int connectserverbyip_nb_ex(int sock, const char *server_ip, \
 
     return result;
 }
+
+/* 非阻塞超时发送数据
+ *
+ * \param sock：建立好的sock
+ * \param data：要传的数据头指针
+ * \param size：send的大小
+ * \param timeout:发送数据超时时间
+ *
+ * \return 0:成功
+ *
+ * */
+int tcpsenddata_nb(int sock, void* data, const int size, const int timeout)
+{
+    int left_bytes;
+    int write_bytes;
+    int result;
+    unsigned char* p;
+#ifdef USE_SELECT
+    fd_set write_set;
+	struct timeval t;
+#else
+    struct pollfd pollfds;
+#endif
+
+#ifdef USE_SELECT
+    FD_ZERO(&write_set);
+	FD_SET(sock, &write_set);
+#else
+    pollfds.fd = sock;
+    pollfds.events = POLLOUT;
+#endif
+
+    p = (unsigned char*)data;
+    left_bytes = size;
+    while (left_bytes > 0)
+    {
+        write_bytes = send(sock, p, left_bytes, 0);
+        if (write_bytes < 0)
+        {
+            if (!(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR))
+            {
+                return errno != 0 ? errno : EINTR;
+            }
+        }
+        else
+        {
+            left_bytes -= write_bytes;
+            p += write_bytes;
+            continue;
+        }
+
+        //运行到下面是因为write_bytes<0,且errno等于EAGAIN,EWOULDBLOCK,EINTR
+#ifdef USE_SELECT
+        if (timeout <= 0)
+		{
+			result = select(sock+1, NULL, &write_set, NULL, NULL);
+		}
+		else
+		{
+			t.tv_usec = 0;
+			t.tv_sec = timeout;
+			result = select(sock+1, NULL, &write_set, NULL, &t);
+		}
+#else
+        result = poll(&pollfds, 1, 1000 * timeout);
+        if (pollfds.revents & POLLHUP)
+        {
+            return ENOTCONN;
+        }
+#endif
+
+        if (result < 0)
+        {
+            if (errno == EINTR)
+            {
+                continue;
+            }
+            return errno != 0 ? errno : EINTR;
+        }
+        else if (result == 0)
+        {
+            return ETIMEDOUT;
+        }
+    }
+
+    return 0;
+}

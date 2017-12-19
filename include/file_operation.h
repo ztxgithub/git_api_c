@@ -4,6 +4,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef int (*getnamefunc)(int socket, struct sockaddr *address, \
 		socklen_t *address_len);
 
@@ -48,6 +52,8 @@ int fd_set_cloexec(int fd);
 in_addr_t getIpaddr(getnamefunc getname, int sock, \
 		char *buff, const int bufferSize);
 
-
+#ifdef __cplusplus
+}
+#endif
 
 #endif
