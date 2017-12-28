@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mongoose_example.dir/main.cpp.o"
+  "CMakeFiles/mongoose_example.dir/src/time_operate.cpp.o"
+  "CMakeFiles/mongoose_example.dir/src/type_convert.c.o"
   "CMakeFiles/mongoose_example.dir/src/file_operation.c.o"
   "CMakeFiles/mongoose_example.dir/src/base64.c.o"
   "CMakeFiles/mongoose_example.dir/src/pthread_func.c.o"
