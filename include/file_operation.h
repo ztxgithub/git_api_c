@@ -3,6 +3,8 @@
 #define __FILE_OPERATION_H__
 
 #include <stdint.h>
+#include <net/if.h>
+#include "common_define.h"
 
 #ifdef __cplusplus
 extern "C" {

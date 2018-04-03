@@ -25,6 +25,7 @@ include_directories(
 )
 
 link_directories("/usr/local/lib/")
+link_directories(/usr/lib/x86_64-linux-gnu)
 
 
 set(LIBRARIES

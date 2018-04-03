@@ -42,8 +42,6 @@ typedef void * (*ThreadEntranceFunc)(LPVOID lpThreadParameter);
 extern int pthread_mutexattr_settype(pthread_mutexattr_t *attr, int kind);
 #endif
 
-#include "_os_define.h"
-
 #ifdef OS_LINUX
 #define PTHREAD_MUTEX_ERRORCHECK PTHREAD_MUTEX_ERRORCHECK_NP
 #endif

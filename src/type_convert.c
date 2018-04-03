@@ -38,3 +38,27 @@ void long2buff(int64_t n, char *buff)
     *p++ = (n >> 8) & 0xFF;
     *p++ = n & 0xFF;
 }
+
+/* 大端模式　32位int转 字符串数组buf
+ *
+ * */
+void int2buff(const int n, char *buff)
+{
+    unsigned char *p;
+    p = (unsigned char *)buff;
+    *p++ = (n >> 24) & 0xFF;
+    *p++ = (n >> 16) & 0xFF;
+    *p++ = (n >> 8) & 0xFF;
+    *p++ = n & 0xFF;
+}
+
+/* 大端模式　字符串数组buf转32位int
+ *
+ * */
+int buff2int(const char *buff)
+{
+    return  (((unsigned char)(*buff)) << 24) | \
+		(((unsigned char)(*(buff+1))) << 16) |  \
+		(((unsigned char)(*(buff+2))) << 8) | \
+		((unsigned char)(*(buff+3)));
+}
